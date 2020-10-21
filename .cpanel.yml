@@ -2,4 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ahmadza3/django/
-    - /bin/cp -R todoproject $DEPLOYPATH
+    - /bin/cp -R todoproject/todo $DEPLOYPATH
+    - /bin/cp -R todoproject/todoproject $DEPLOYPATH
+    - /bin/cp -R todoproject/user $DEPLOYPATH
+    - /bin/cp todoproject/db.sqlite3 $DEPLOYPATH
+    - /bin/cp todoproject/manage.py $DEPLOYPATH
