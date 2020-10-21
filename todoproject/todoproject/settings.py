@@ -27,8 +27,15 @@ SECRET_KEY = '8xftu=jt49adv(rnqa)vi1lmnb82zxys6h2gc0cxyh-fti6w$u'
 DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost","ahmadzakiht.com", "www.ahmadzakiht.com"]
+STATIC_URL = '/static/'
 
+MEDIA_URL = '/media/'
 
+STATICFILES_DIRS = [BASE_DIR+"/assets/"]
+
+STATIC_ROOT = '/home/ahmadza3/django/todoproject/static/'
+
+MEDIA_ROOT = '/home/ahmadza3/django/todoproject/media/'
 # Application definition
 
 INSTALLED_APPS = [
@@ -121,8 +128,3 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-
-STATIC_URL = '/static/'
