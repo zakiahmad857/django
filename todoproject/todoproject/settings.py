@@ -31,7 +31,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [BASE_DIR+"/assets/"]
+STATICFILES_DIRS = [str(BASE_DIR)+"/assets/"]
 
 STATIC_ROOT = '/home/ahmadza3/django/todoproject/static/'
 
