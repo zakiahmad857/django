@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'user',
     'todo',
     'rest_framework',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -121,4 +121,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_ROOT = "app-root/repo/wsgi/static"
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    ('assets', 'app-root/repo/wsgi/openshift/static'),
+
+    )
