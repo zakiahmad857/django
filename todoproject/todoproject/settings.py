@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+from django.conf import settings
 from pathlib import Path
 import os
 
@@ -27,15 +27,8 @@ SECRET_KEY = '8xftu=jt49adv(rnqa)vi1lmnb82zxys6h2gc0cxyh-fti6w$u'
 DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost","ahmadzakiht.com", "www.ahmadzakiht.com"]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-
-MEDIA_URL = '/media/'
-
-STATICFILES_DIRS = [str(BASE_DIR)+"/assets/"]
-
-STATIC_ROOT = '/home/ahmadza3/django/static/'
-
-MEDIA_ROOT = '/home/ahmadza3/django/media/'
 # Application definition
 
 INSTALLED_APPS = [
