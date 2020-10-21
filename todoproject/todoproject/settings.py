@@ -33,9 +33,9 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [str(BASE_DIR)+"/assets/"]
 
-STATIC_ROOT = '/home/ahmadza3/django/todoproject/static/'
+STATIC_ROOT = '/home/ahmadza3/django/static/'
 
-MEDIA_ROOT = '/home/ahmadza3/django/todoproject/media/'
+MEDIA_ROOT = '/home/ahmadza3/django/media/'
 # Application definition
 
 INSTALLED_APPS = [
