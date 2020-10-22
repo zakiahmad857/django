@@ -27,8 +27,15 @@ SECRET_KEY = '8xftu=jt49adv(rnqa)vi1lmnb82zxys6h2gc0cxyh-fti6w$u'
 DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost","ahmadzakiht.com", "www.ahmadzakiht.com"]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+
+STATICFILES_DIRS = [str(BASE_DIR)+"/assets/"]
+
+STATIC_ROOT = [str(BASE_DIR)+'static/', 'public_html/static']
+
+MEDIA_ROOT = [str(BASE_DIR)+'media/']
 # Application definition
 
 INSTALLED_APPS = [
