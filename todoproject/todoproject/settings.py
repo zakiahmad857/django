@@ -33,9 +33,9 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [str(BASE_DIR)+"/static/"]
 
-STATIC_ROOT = [str(BASE_DIR)+'static/']
+STATIC_ROOT = 'static/'
 
-MEDIA_ROOT = [str(BASE_DIR)+'media/']
+MEDIA_ROOT = 'media/'
 # Application definition
 
 INSTALLED_APPS = [
